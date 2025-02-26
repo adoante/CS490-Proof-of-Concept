@@ -13,7 +13,7 @@ export default function ButtonAPI() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/');
+      const response = await fetch('http://127.0.0.1:8000/hero/Deadpond');
 
       if (!response.ok) {
         throw new Error(`Failed to fetch data! Error: ${response.status}`);
@@ -47,7 +47,7 @@ export default function ButtonAPI() {
           <Alert.Description>
             Message from backend:
             <br></br>
-            {data.message}
+            {JSON.stringify(data)}
           </Alert.Description>
         </Alert.Content>
         <CloseButton onClick={toggleShowAlert} pos="relative" top="-2" insetEnd="-2" />

@@ -6,12 +6,6 @@ export default function Home() {
     <AbsoluteCenter>
       <VStack>
         <ButtonAPI></ButtonAPI>
-        <ButtonAPI></ButtonAPI>
-        <ButtonAPI></ButtonAPI>
-        <ButtonAPI></ButtonAPI>
-        <ButtonAPI></ButtonAPI>
-        <ButtonAPI></ButtonAPI>
-        <ButtonAPI></ButtonAPI>
       </VStack>
     </AbsoluteCenter>
   );
